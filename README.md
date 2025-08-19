@@ -1,7 +1,13 @@
 Postfix Mail Relay
 ======================
 
-Simple SMTP relay, based on alterrebe/docker-mail-relay
+Simple SMTP relay, based on alterrebe/docker-mail-relay.
+
+Pull via:
+
+```bash
+docker pull ghcr.io/zarix/docker-mail-relay:latest
+```
 
 Contains:
 
