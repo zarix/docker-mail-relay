@@ -1,6 +1,8 @@
 Postfix Mail Relay
 ======================
 
+Simple SMTP relay, based on alterrebe/docker-mail-relay
+
 Contains:
 
 * Postfix, running in a simple relay mode
