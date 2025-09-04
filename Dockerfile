@@ -11,7 +11,8 @@ RUN mkfifo /var/spool/postfix/public/pickup \
     && ln -s /etc/postfix/aliases /etc/aliases \
     && touch /etc/postfix/sender_canonical \
     && touch /etc/postfix/recipient_canonical \
-    && touch /etc/postfix/transport_maps
+    && touch /etc/postfix/transport_maps \
+    && touch /etc/postfix/smtp_header_checks
 
 # Configure: supervisor
 ADD bin/dfg.sh /usr/local/bin/

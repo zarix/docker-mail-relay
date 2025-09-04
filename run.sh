@@ -29,6 +29,7 @@ newaliases
 # Sender/recipient rewrites
 postmap /etc/postfix/sender_canonical
 postmap /etc/postfix/recipient_canonical
+postmap /etc/postfix/smtp_header_checks
 
 # Transport Map Support
 postmap /etc/postfix/transport_maps

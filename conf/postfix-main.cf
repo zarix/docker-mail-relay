@@ -36,8 +36,10 @@ myhostname = {{ RELAY_HOST_NAME }}
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 sender_canonical_maps = regexp:/etc/postfix/sender_canonical
-recipient_canonical_maps = hash:/etc/postfix/recipient_canonical
-transport_maps = hash:/etc/postfix/transport_maps
+recipient_canonical_maps = regexp:/etc/postfix/recipient_canonical
+transport_maps = regexp:/etc/postfix/transport_maps
+smtp_header_checks = regexp:/etc/postfix/smtp_header_checks
+
 myorigin = /etc/mailname
 mydestination = {{ RELAY_HOST_NAME }}, localhost
 relayhost = {{ EXT_RELAY_HOST }}:{{ EXT_RELAY_PORT }}
